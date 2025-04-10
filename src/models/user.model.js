@@ -43,11 +43,11 @@ const userScheme = new Schema(
       required: [true, "Password is required"],
     },
     refreshToken: {
-      type: stringify,
+      type: String,
     },
   },
   {
-    timeseries: true,
+    timestamps: true,
   }
 );
 
